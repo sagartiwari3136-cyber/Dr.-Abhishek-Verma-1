@@ -16,9 +16,9 @@ export default function HomeTimeline() {
             <b>{t.year}</b>
             <h4>
               {t.title}
-              {"placeholder" in t && t.placeholder && (
-                <span className="pl">PLACEHOLDER</span>
-              )}
+              {"placeholder" in t && t.placeholder === true ? (
+  <span className="pl">PLACEHOLDER</span>
+) : null}
             </h4>
             <p>{t.text}</p>
           </div>
