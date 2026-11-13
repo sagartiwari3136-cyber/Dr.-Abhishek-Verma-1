@@ -10,6 +10,8 @@ import Honours from "@/components/Honours";
 import Legacy from "@/components/Legacy";
 import QuoteSection from "@/components/QuoteSection";
 import Footer from "@/components/Footer";
+import JourneyExplorer from "@/components/JourneyExplorer";
+import { journey } from "@/lib/data";
 
 export default function Home() {
   return (
@@ -20,7 +22,7 @@ export default function Home() {
       <Stats />
       <About />
       <Speeches />
-      <HomeTimeline />
+      <JourneyExplorer items={journey} />
       <Gallery />
       <Honours />
       <Legacy />

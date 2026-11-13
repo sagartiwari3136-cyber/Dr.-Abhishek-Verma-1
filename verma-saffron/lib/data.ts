@@ -33,7 +33,7 @@ export type Img = { caption: string; img?: string };
 export const aboutImages: Img[] = [
   {
     caption: "Early years, New Delhi",
-    img: "https://ik.imagekit.io/5lj5xs7ii/IMG000.jpg?updatedAt=1792040943540",
+    img: "https://ik.imagekit.io/2bpcmyrlg/31.jpg",
   },
   {
     caption: "Georgetown University",
@@ -41,7 +41,7 @@ export const aboutImages: Img[] = [
   },
   {
     caption: "With family",
-    img: "https://ik.imagekit.io/5lj5xs7ii/IMG_4812.jpeg?updatedAt=1790577710572",
+    img: "https://ik.imagekit.io/5lj5xs7ii/Photos%20for%20Calender/Photos%20for%20Calender/133A0312.JPG",
   },
 ];
 
@@ -68,7 +68,7 @@ export const homeTimeline = [
     title: "Hindu College & Georgetown University",
     text: "Undergraduate at Delhi University; Master's Diploma in Washington, D.C.",
   },
-  { year: "1990s–2000s", title: "[Sample] Early public & business roles" },
+  { year: "1997", title: "Youngest Billionaire of India", text: "Cover of India Today Magazine" },
   { year: "2021", title: "Maharashtra Samman", text: "Awarded by the Governor of Maharashtra." },
   {
     year: "2024",
@@ -85,20 +85,50 @@ export const homeTimeline = [
     title: "Gau Rakshak Samman",
     text: "Conferred the honorary title of ‘Gau Rakshak’ (Protector of Cows) by Acharya Sudhanshu Ji Maharaj",
   },
-  
+
 ];
 
-export const gallery: Img[] = [
-  { caption: "Induction ceremony, Mumbai — 2025",
-    img: "https://ik.imagekit.io/5lj5xs7ii/Photos%20for%20Calender/Photos%20for%20Calender/VFO_6127.JPG",
-   },
-  { caption: "BBMG Award, London", img: "https://ik.imagekit.io/5lj5xs7ii/M30_8225%20(2).jpg?updatedAt=1786567247027" },
-  { caption: "Maharashtra Samman", img: "https://ik.imagekit.io/5lj5xs7ii/1%20(9).jpg?updatedAt=1785472883653x" },
-  { caption: "Public rally", img: "https://ik.imagekit.io/5lj5xs7ii/1%20(9).jpg?updatedAt=1785472883653" },
-  { caption: "With NDA leaders", img: "https://ik.imagekit.io/5lj5xs7ii/M30_1392.jpg?updatedAt=1783194349991" },
-  { caption: "Convocation, Maryland", img: "https://ik.imagekit.io/5lj5xs7ii/M30_5838.png?updatedAt=1779817557914" },
-  { caption: "SKV Trust event", img: "https://ik.imagekit.io/5lj5xs7ii/M30_5764.png?updatedAt=1779817557961" },
-  { caption: "[Add photo]", img: "https://ik.imagekit.io/5lj5xs7ii/M30_5838.png?updatedAt=1779817557914" },
+export const gallery = [
+  {
+    caption: "Induction Ceremony, Mumbai — 2025",
+    img: "https://ik.imagekit.io/2bpcmyrlg/abhishek-verma-3117512-16x9_0.webp",
+    className: "gallery-large",
+  },
+  {
+    caption: "BBMG Award, London",
+    img: "https://ik.imagekit.io/2bpcmyrlg/Screenshot%202026-11-06%20034741.png",
+    className: "gallery-tall",
+  },
+  {
+    caption: "Maharashtra Samman",
+    img: "https://ik.imagekit.io/5lj5xs7ii/1%20(9).jpg?updatedAt=1785472883653x",
+    className: "gallery-small",
+  },
+  {
+    caption: "With NDA Leaders",
+    img: "https://ik.imagekit.io/2bpcmyrlg/JeevanDeepAshram?updatedAt=1793918932207",
+    className: "gallery-small",
+  },
+  {
+    caption: "Public Rally",
+    img: "https://ik.imagekit.io/2bpcmyrlg/Rally",
+    className: "gallery-wide",
+  },
+  {
+    caption: "Convocation, Maryland",
+    img: "https://ik.imagekit.io/2bpcmyrlg/Doctorate%20Degree%20AV1.jpg",
+    className: "gallery-small",
+  },
+  {
+    caption: "SKV Trust Event",
+    img: "https://ik.imagekit.io/5lj5xs7ii/M30_5838.png?updatedAt=1779817557914",
+    className: "gallery-wide",
+  },
+  {
+    caption: "Social Initiatives",
+    img: "https://ik.imagekit.io/5lj5xs7ii/M30_5838.png?updatedAt=1779817557914",
+    className: "gallery-wide",
+  },
 ];
 
 export const honours = [
@@ -108,7 +138,7 @@ export const honours = [
 ];
 
 export const legacy = {
-  forefathers: { title: "[Add names]", note: "Influential political figures" },
+  forefathers: { title: "Minimata(Meenakshi Devi)", note: "Member Of Parliament for 24 Yrs" },
   parents: { title: "Shrikant & Veena Verma", note: "Carried the legacy forward" },
   today: { title: "Dr. Abhishek Verma", note: "Chief National Coordinator, NDA" },
   next: [""],
@@ -125,11 +155,16 @@ export const philanthropy = [
  * Use a real, verified line from his speeches / press conference.
  */
 export const quote = {
-  text: "Sanatan is not merely a tradition of the past; it is the eternal wisdom that guides humanity toward truth, righteousness, and liberation.",
+  english:
+    "Dharma is not just a word; it is a responsibility.",
+
+  hindi:
+    "धर्म केवल एक शब्द नहीं है , यह एक ज़िम्मेदारी है",
+
   cite: "Dr. Abhishek Verma",
+
   role: "Chief National Coordinator, NDA Alliance & Elections",
 };
-
 /* ---------------- Journey page ---------------- */
 
 export type Milestone = {
@@ -165,7 +200,7 @@ export const journey: Milestone[] = [
     vintage: true,
   },
   {
-    y: "year", d: "", l: "Washington, D.C.", t: "Master's Diploma, Georgetown University",
+    y: "YEAR", d: "", l: "Washington, D.C.", t: "Master's Diploma, Georgetown University",
     p: "Earns a Master's Diploma from Georgetown University in Washington, D.C. ",
     c: ["Georgetown University", "Washington, D.C., USA"],
     e: "🌎", g: ["#f0b867", "#b4672a"],
@@ -173,10 +208,10 @@ export const journey: Milestone[] = [
     vintage: true,
   },
   {
-    y: "1990s–2000s", d: "", l: "[Add place]", t: "[Sample] First steps in public and business life",
+    y: "1997", d: "", l: "[Add place]", t: "[Sample] First steps in public and business life",
     p: "[Add verified details: earliest civic, party or family-enterprise roles and the people who shaped this stage.]",
     c: ["[Add detail]"], e: "🤝", g: ["#ffb04d", "#d9560a"],
-    img: "https://ik.imagekit.io/YOUR_IMAGEKIT_ID/journey/early-career.jpg",
+    img: "https://ik.imagekit.io/2bpcmyrlg/India%20Today_%20Megarich%20New%20Toys.png",
     placeholder: true,
   },
   {
@@ -196,27 +231,27 @@ export const journey: Milestone[] = [
     y: "2024", d: "Mar 8", l: "London, UK", t: "BBMG Award",
     p: "Receives the BBMG Award from British Members of Parliament in London, his first major international honour on this timeline.",
     c: ["March 8, 2024", "Awarded by British MPs"], e: "🕰️", g: ["#ff8a1f", "#b83e00"],
-    img: "https://ik.imagekit.io/YOUR_IMAGEKIT_ID/journey/bbmg-award.jpg",
+    img: "https://ik.imagekit.io/2bpcmyrlg/Screenshot%202026-11-06%20034741.png?updatedAt=1793917075297",
   },
   {
     y: "2024", d: "April", l: "Maryland, USA", t: "Doctorate of Philosophy",
     p: "Maryland State University confers a Doctorate of Philosophy upon him.",
     c: ["April 2024", "Maryland State University, USA"], e: "🎓", g: ["#ff7d12", "#a83600"],
-    img: "https://ik.imagekit.io/YOUR_IMAGEKIT_ID/journey/doctorate.jpg",
+    img: "https://ik.imagekit.io/2bpcmyrlg/Doctorate%20Degree%20AV1.jpg",
   },
   {
     y: "2025", d: "Jan 30", l: "Mumbai", t: "Chief National Coordinator, NDA Alliance & Elections",
     p: "Appointed by Shiv Sena party chief and Maharashtra Deputy Chief Minister Eknath Shinde in a formal ceremony in Mumbai, followed by a press conference, continuing the family's political legacy.",
     c: ["Jan 30, 2025", "Induction ceremony + press conference", "Shiv Sena · NDA"],
     e: "🎙️", g: ["#ff6a00", "#8f2d00"],
-    img: "https://ik.imagekit.io/YOUR_IMAGEKIT_ID/journey/induction-ceremony.jpg",
+    img: "https://ik.imagekit.io/2bpcmyrlg/abhishek-verma-3117512-16x9_0.webp?updatedAt=1793916813575",
   },
   {
     y: "Next", d: "", l: "place", t: "[Sample] What he is building now",
     p: "[Add verified details: current campaigns, alliance work and the initiatives he is leading.]",
     c: ["detail"], e: "🌅", g: ["#ff9933", "#7a2600"],
     img: "https://ik.imagekit.io/YOUR_IMAGEKIT_ID/journey/current-work.jpg",
-    
+
   },
 ];
 

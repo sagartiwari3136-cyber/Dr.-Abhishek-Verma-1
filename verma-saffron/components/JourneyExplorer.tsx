@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import type { Milestone } from "@/lib/data";
+import Reveal from "./Reveal";
 
 /**
  * Hover (or keyboard-focus) any milestone to swap the large photo frame.
@@ -25,7 +26,11 @@ export default function JourneyExplorer({ items }: { items: Milestone[] }) {
   }, []);
 
   return (
-    <main className="wrap">
+    <section className="wrap" id="journey">
+      <Reveal className="lab">03 — Journey</Reveal>
+      <Reveal>
+        <h2 >A record kept in dates.</h2>
+      </Reveal>
       <div className="list">
         {items.map((m, i) => (
           <article
@@ -71,6 +76,6 @@ export default function JourneyExplorer({ items }: { items: Milestone[] }) {
           </figure>
         ))}
       </aside>
-    </main>
+    </section>
   );
 }
